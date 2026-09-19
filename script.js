@@ -66,8 +66,8 @@
     successMessage.textContent = vai === false
       ? "Que pena! Obrigado por avisar — vamos sentir sua falta."
       : "Presença confirmada! Nos vemos no dia 08 de novembro.";
-    form.hidden = true;
     successView.hidden = false;
+    form.classList.add('invisivel');
   }
 
   function resetForm() {
@@ -106,9 +106,7 @@
     enviar()
       .then(() => {
         enviando = false;
-        submitBtn.textContent = "Enviado!!!";
-        submitBtn.classList.add("is-sent");
-        setTimeout(showSuccess, 900);
+        showSuccess();
       })
       .catch(() => {
         enviando = false;
@@ -118,5 +116,5 @@
       });
   });
 
-  resetBtn.addEventListener("click", resetForm);
+  //resetBtn.addEventListener("click", resetForm);
 })();
