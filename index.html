@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurora · 1 aninho</title>
+<meta name="description" content="Aurora faz 1 aninho — 08 de novembro, 15h, Salão de Festas Residencial Jatobá. Confirme sua presença.">
+
+<meta property="og:title" content="Aurora · 1 aninho">
+<meta property="og:description" content="Aurora faz 1 aninho — 08 de novembro, 15h, Salão de Festas Residencial Jatobá. Confirme sua presença.">
+<meta property="og:image" content="assets/convite-aurora.png">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='20' r='10' fill='%23c31432'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+<main class="container">
+
+  <!-- Hero -->
+  <section class="frame">
+    <div class="frame-inner hero">
+      <div class="cherry-pair">
+        <div class="cherry cherry--lg cherry--left">
+          <span class="stem"></span><span class="leaf"></span><span class="fruit"></span>
+        </div>
+        <div class="cherry cherry--lg cherry--right">
+          <span class="stem"></span><span class="leaf"></span><span class="fruit"></span>
+        </div>
+      </div>
+      <h1 class="name">Aurora</h1>
+      <div class="divider">♥</div>
+      <p class="hero-text">Nossa pequena cerejinha está fazendo 1 aninho e será uma alegria comemorar essa data tão especial com pessoas queridas!</p>
+      <div class="date-row">
+        <div class="date-side">Sábado</div>
+        <div class="date-center">
+          <div class="date-day">08</div>
+          <div class="date-month">Novembro</div>
+        </div>
+        <div class="date-side date-time">15:00h</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local -->
+  <section class="card local">
+    <div class="label">Local</div>
+    <div class="place-name">Salão de Festas</div>
+    <div class="place-complement">Residencial Jatobá</div>
+    <p class="address">Av. Olívio Franceschini, 850<br>Parque Ortolândia — Hortolândia, SP<br>CEP 13184-160</p>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.297587347516!2d-47.23272542411409!3d-22.865462836396695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bc0c0a0e3ddf%3A0xe4ae30f56317074f!2sCondom%C3%ADnio%20Residencial%20Jardim%20do%20Jatob%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1789825202101!5m2!1spt-BR!2sbr"
+        title="Mapa do local da festa"
+        width="100%" height="100%" style="border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <a class="btn-primary" href="https://maps.app.goo.gl/VuP37ACt7JUJBSy39" target="_blank" rel="noopener">Abrir no Google Maps</a>
+  </section>
+
+  <!-- Sobre a Aurora -->
+  <section class="card">
+    <div class="label center">Sobre a Aurora</div>
+    <div class="info-list">
+      <div class="info-row">
+        <div class="cherry cherry--md"><span class="stem"></span><span class="leaf"></span><span class="fruit"></span></div>
+        <div>
+          <div class="info-label">Roupas</div>
+          <div class="info-value">12 a 24 meses</div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="cherry cherry--md"><span class="stem"></span><span class="leaf"></span><span class="fruit"></span></div>
+        <div>
+          <div class="info-label">Calçados</div>
+          <div class="info-value">Tamanho 20 (aprox. 13 cm)</div>
+        </div>
+      </div>
+    </div>
+    <p class="note">A presença de vocês já é o maior presente.</p>
+  </section>
+
+  <!-- Mensagem dos pais -->
+  <section class="card blush">
+    <div class="divider">♥</div>
+    <p class="message">A cereja representa: "O detalhe que torna algo perfeito"!<br>Não é por acaso que Aurora é a nossa Cerejinha!<br>Desejamos que sintam um pouco do que Aurora representa nas nossas vidas!</p>
+    <div class="signature">com amor, papai e mamãe</div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="frame">
+    <div class="frame-inner rsvp">
+      <div class="rsvp-header">
+        <div class="rsvp-title">Confirme sua presença</div>
+        <div class="rsvp-subtitle">até 01 de novembro</div>
+      </div>
+
+      <div id="rsvp-success" class="rsvp-success" hidden>
+        <div class="divider">♥</div>
+        <p id="rsvp-success-message" class="success-message"></p>
+        <button type="button" id="rsvp-reset" class="btn-secondary">Enviar outra resposta</button>
+      </div>
+
+      <form id="rsvp-form" class="rsvp-form" novalidate>
+        <label class="field">
+          Nome
+          <input type="text" id="rsvp-nome" name="nome" placeholder="Seu nome" autocomplete="name">
+        </label>
+
+        <div class="field-grid">
+          <label class="field">
+            Adultos
+            <input type="number" id="rsvp-adultos" name="adultos" min="0" value="1">
+          </label>
+          <label class="field">
+            Crianças
+            <input type="number" id="rsvp-criancas" name="criancas" min="0" value="0">
+          </label>
+        </div>
+
+        <div class="rsvp-choice" role="radiogroup" aria-label="Você poderá vir?">
+          <button type="button" class="choice-btn" id="rsvp-sim" role="radio" aria-checked="false">Vou sim ♥</button>
+          <button type="button" class="choice-btn" id="rsvp-nao" role="radio" aria-checked="false">Não poderei ir</button>
+        </div>
+
+        <button type="submit" id="rsvp-submit" class="btn-submit">Confirmar</button>
+        <div id="rsvp-erro" class="rsvp-erro" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="cherry cherry--sm"><span class="stem"></span><span class="leaf"></span><span class="fruit"></span></div>
+    <span class="footer-title">Aurora · 1 aninho</span>
+    <div class="cherry cherry--sm"><span class="stem"></span><span class="leaf"></span><span class="fruit"></span></div>
+  </footer>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
