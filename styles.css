@@ -388,6 +388,11 @@ input, button {
   cursor: default;
 }
 
+.btn-submit.is-sent {
+  background: var(--stem);
+  opacity: 1;
+}
+
 .rsvp-erro {
   text-align: center;
   font-size: 15px;

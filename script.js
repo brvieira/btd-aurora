@@ -78,6 +78,7 @@
     updateChoiceButtons();
     submitBtn.disabled = false;
     submitBtn.textContent = "Confirmar";
+    submitBtn.classList.remove("is-sent");
     form.hidden = false;
     successView.hidden = true;
     adultosInput.value = "1";
@@ -105,7 +106,9 @@
     enviar()
       .then(() => {
         enviando = false;
-        showSuccess();
+        submitBtn.textContent = "Enviado!!!";
+        submitBtn.classList.add("is-sent");
+        setTimeout(showSuccess, 900);
       })
       .catch(() => {
         enviando = false;
