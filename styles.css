@@ -148,7 +148,7 @@ input, button {
   color: var(--cherry-mid);
 }
 
-.date-time { text-align: right; font-size: 22px; letter-spacing: 0; text-transform: none; }
+.date-time { text-align: left; font-size: 22px; letter-spacing: 0; text-transform: none; }
 
 .date-center {
   padding: 0 12px;
